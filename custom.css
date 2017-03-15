@@ -1,0 +1,90 @@
+/* APP WIDE */
+body {background: #eeecef; color: #424242;}
+.textCenter {text-align: center;}
+.iconSmall{font-size: 2rem;}
+.iconMed {font-size: 2.5rem; text-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); }
+.flexCenter 
+{display: flex; align-items: center; justify-content: center; flex-wrap: wrap;}
+.noTextDec {text-decoration: none;}
+.redB {background: #de4f4f;}
+.yellowB {background: #FFEB3B;}
+.greenB {background: #388E3C;}
+
+/* HEADERS */
+.nav-text 
+{
+	font-family: 'Raleway'; font-size: 2.5rem;
+	text-align: center; margin: 0;
+}
+.headerBox 
+{
+	font-family: 'Roboto'; font-weight: 300; font-size: 1.2rem; 
+}
+.projectHeader {font-family: 'Roboto'; font-weight: 300; font-size: 1.2rem;}
+
+/* App Headers */
+.appleImage {height: 60px; width: 172px;}
+.googleImage {height: 50px; width: 172px;}
+.badgesContainer {display: flex; flex-direction: row; align-items: center; justify-content: center;}
+
+/* DESKTOP DISPLAY */
+.browserWrapper {width: 90%; max-width: 1200px; margin: auto;}
+.browserTopper 
+{
+	background: #3c3b37; border-radius: 8px 8px 0px 0px;
+	height: 2rem; line-height: 2rem; padding-left: 5px;
+	display: flex; justify-content: left; align-items: center; 
+}
+.browserTopper > li 
+{
+	list-style: none; height: .85rem; width: .85rem; 
+	margin: auto 4px; border-radius: 50%; border: 1px solid #272822;
+}
+.deskImg, .mobileImg 
+{
+	width: 100%; border-radius: 0 0 3px 3px; /* level 5 box-shadow */
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); 
+}
+.desktopDisplayWrapper 
+{
+	display: flex; align-items: center; justify-content: flex-start;
+	max-width: 1300px; padding: 5px; margin: auto; 
+}
+.navChevron:hover {cursor: pointer; cursor: hand;}
+#nextLVD:active, #prevLVD:active {color: #81D4FA;}
+
+/* MOBILE DISPLAY */
+.appIconGG 
+{
+	height: 8rem; width: 8rem; border-radius: 8px; 
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 8px 8px 4px rgba(0,0,0,0.11);
+}
+#nextGG:active, #prevGG:active {color: #de4f4f;}
+.mobileDisplayWrapper {width: 420px; margin: auto; margin-bottom: 240px;}
+.mobileDisplay 
+	{width: 340px; height: 568px;  margin: auto 15px;}
+.mobileDisplay > * {background: #272822;}
+.iPhoneTopper 
+{
+	height: 80px; width: 340px; background: #272822; 
+	border-radius: 40px 40px 0px 0px;
+	display: flex; flex-direction: column; 
+	align-items: center; justify-content: center;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 25px 25px 12px rgba(0,0,0,0.22);
+ }
+ .topperBar, .topperDot {background: #9E9E9E; float: center;}
+ .topperBar {width: 60px; height: 6px; border-radius: 6px;}
+ .topperDot {width: 10px; height: 10px; border-radius: 50%;}
+ .mobileImgWrapper {border: 10px solid #272822; box-shadow: 0 19px 38px rgba(0,0,0,0.30), 25px 25px 12px rgba(0,0,0,0.22);}
+ .mobileImg 
+ {box-shadow: none; border-radius: 0px; border-radius: 2px; max-height: 540px;}
+.iPhoneBottomer 
+{
+	width: 340px; height: 70px; padding-bottom: 10px; 
+	border-radius: 0px 0px 40px 40px; /* level 5 box-shadow */
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 25px 25px 12px rgba(0,0,0,0.22);
+}
+.homeButton 
+	{width: 45px; height: 45px; border-radius: 50%; border: 2px solid #9E9E9E;}
+.homeSquare 
+	{border-radius: 2px; height: 14px; width: 14px; border: 2px solid #9E9E9E;}

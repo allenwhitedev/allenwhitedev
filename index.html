@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AWD Portfolio</title>
+  <link rel='stylesheet' href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+  <link rel='stylesheet' href='custom.css'>
+  <link href='//fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  
+</head>
+
+<body>
+
+<!-- HEADER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<br>
+<h1 class="nav-text">Allen White Dev</h1>  
+
+<div class="headerBox textCenter">  	
+	
+	<p> 
+		I am a <strong>full-stack</strong> developer that makes 
+		<strong>websites + apps</strong> for iOS/Android
+  </p>
+  
+  <p class='flexCenter'>
+	  <span class='flexCenter'> 
+	    <i class="ion-ios-email iconSmall"></i> &nbsp; 
+	    <a>allenwhitedev@gmail.com</a>
+	  	&nbsp; &nbsp;
+	  </span>
+	  <span class='flexCenter'> 
+	  	<i class="ion-social-github iconSmall"></i> &nbsp; 
+	  	<a class='noTextDec' href='https://github.com/allenwhitedev'>allenwhitedev</a>
+	 	</span>
+  </p>
+<br> <hr> <br>
+</div>
+
+
+<!-- NO MOBILE LVD SCREENSHOTS AT THIS TIME -->
+
+<!-- MOBILE HEADER DISPLAY (GIF GAME) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<div class="projectHeader textCenter">
+		
+		<div class="appIconHeader">
+			<img class='appIconGG' src="img/gifGameIconBeta.png">
+				<h2 class='appIconTitle'>Gif Game</h2>	
+				
+				<div class="badgesContainer">
+						<!-- GOOGLE PLAY BADGE -->
+						<p>		
+							<a class='appBadge googlePlayBadge' href="https://play.google.com/store/apps/details?id=com.idoro9ye8ycteb1n7xfft">
+							  <img class='googleImage' alt="Get it on Google Play"
+							       src="img/google-play-badge.png" />
+							</a>
+						</p>
+				  
+					  <section>&nbsp; or &nbsp;</section>
+						
+						<!-- ITUNES BADGE -->
+						<a class='appBadge' href="https://itunes.apple.com/us/app/gif-game/id1040650791?mt=8">
+							<img class='appleImage' src="img/appStoreBadge.svg">
+						</a>
+					
+				</div>
+
+		</div>
+
+		<div class="temp">
+		</div>
+		
+	</div>
+	<br><br>
+
+<!-- MOBILE WRAPPER -->
+<div class="mobileDisplayWrapper flexCenter">
+
+	<i class="ion-chevron-left iconMed navChevron" id='prevGG'></i>
+
+	<div class="mobileDisplay">	
+		
+		<div class="iPhoneTopper">
+			<div class='topperDot'></div><br>
+			<div class='topperBar'></div>	
+		</div>
+		
+		<div class='mobileImgWrapper'>
+			<img src='img/home.png' class="mobileImg" id='gGImg' />
+		</div>
+
+		<div class="iPhoneBottomer flexCenter">
+			<div class="homeButton flexCenter">
+				<div class="homeSquare"></div>
+			</div>
+		</div>
+
+	</div>
+
+	<i class="ion-chevron-right iconMed navChevron" id='nextGG'></i>
+
+</div>	
+
+
+<hr>
+<br><br>
+
+
+<!-- WEBSITE HEADER (LVD) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<div class="projectHeader textCenter">
+	<h2>LakeView Dental</h2>
+  <p class="">
+    <a class='noTextDec' href='http://lakeviewdental.org'>lakeviewdental.org</a> (desktop version)
+    <br>
+    <br>
+        <a class='noTextDec' href='https://lakeviewdental.herokuapp.com'>lakeviewdental.herokuapp.com</a> (mobile-friendy version) 
+  </p>
+</div>
+
+
+
+
+<!-- WEBSITE DISPLAY (LVD) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<!-- DESKTOP WRAPPER -->
+<div class="desktopDisplayWrapper">
+
+	<i class="ion-chevron-left iconMed navChevron" id='prevLVD'></i>
+
+	<div class="browserWrapper">
+		<div class="browserTopper">
+			<li class='redB mrgL'></li>
+			<li class='yellowB'></li>
+			<li class="greenB"></li>
+		</div>
+		<img class='deskImg' src="img/lvd1D.png" id='lvdImg'>
+	</div>
+
+	<i class="ion-chevron-right iconMed navChevron" id='nextLVD'></i>
+
+</div>
+
+	<br> <br>
+<!-- 
+	<h2>Descriptions</h2>
+
+	<p class='projectDescription'>
+		Gif Game is an iOS and Android app that is like apples to apples. Players submits gifs in response to prompts and try to earn points with the judge. Made with Javascript and love.
+	</p>
+
+	<p class='projectDescription'>
+		LakeView Dental is a dental office in Coral Springs, Florida. The website allows patients to enter their data online, view available dental procedures and simply see the location. The website was one of my first forays into web development. Made with Ruby on Rails and low quality images.   
+	</p> -->
+
+<!-- EXTRA SPACE FOR TESTING -->
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+<script type="text/javascript">
+	let lvdPics = ['lvd1D.png', 'lvd2D.png', 'lvd3D.png']
+	let gGPics = ['home.png', 'gameModal.png', 'owlPlayer.png', 'roundWinner.png', 'iphone5Judge.png', 'gameWinner.png']
+
+	console.log('script here')
+	let i = 0; let j = 0
+
+	setInterval( () => 
+	{
+		console.log('interval', i, j)
+		if (j < gGPics.length - 1)
+			j++
+		else
+			j = 0
+		if ( i < lvdPics.length - 1 )
+			i++
+		else 
+			i = 0
+
+		document.getElementById("gGImg").src = "img/" + gGPics[j]
+		document.getElementById("lvdImg").src = "img/" +  lvdPics[i]
+
+	}, 3000 )
+</script>
+
+
+</html>
